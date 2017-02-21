@@ -8,8 +8,8 @@
           "type": "OVERGROUND_STATION"
         },
         {
-          "name": "destination",
-          "type": "OVERGROUND_STATION"
+          "name": "inboundOrOutbound",
+          "type": "INBOUND_OR_OUTBOUND"
         }
       ]
     },

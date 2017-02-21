@@ -1,4 +1,2 @@
-GetNextLondonOverGroundTrainIntent get the next train from {station}
-GetNextLondonOverGroundTrainIntent get the next train from {station} to {destination}
-GetNextLondonOverGroundTrainIntent get the next trains from {station}
-GetNextLondonOverGroundTrainIntent get the next trains from {station} to {destination}
+GetNextLondonOverGroundTrainIntent Ask Next London Overground Train for the next {inboundOrOutbound} train from {station}
+GetNextLondonOverGroundTrainIntent Ask Next London Overground Train for the next {inboundOrOutbound} trains from {station}
