@@ -1,0 +1,27 @@
+{
+  "name": "alexaskills-london-overground",
+  "version": "1.0.0",
+  "description": "Get next trains for London Overground at a specific stop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eagerterrier/alexaskills-london-overground.git"
+  },
+  "keywords": [
+    "Alexa",
+    "utility",
+    "skill"
+  ],
+  "author": "Amazon.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eagerterrier/alexaskills-london-overground/issues"
+  },
+  "homepage": "https://github.com/eagerterrier/alexaskills-london-overground/#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0"
+  }
+}

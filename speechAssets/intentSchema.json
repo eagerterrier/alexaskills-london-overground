@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "intent": "GetNextLondonOverGroundTrainIntent",
+      "slots": [
+        {
+          "name": "station",
+          "type": "OVERGROUND_STATION"
+        },
+        {
+          "name": "destination",
+          "type": "OVERGROUND_STATION"
+        }
+      ]
+    },
+    {
+      "intent": "SaveNextLondonOverGroundTrainIntent",
+      "slots": [
+        {
+          "name": "station",
+          "type": "OVERGROUND_STATION"
+        }
+      ]
+    },
+    {
+      "intent": "SaveNextLondonOverGroundTrainDirectionIntent",
+      "slots": [
+        {
+          "name": "direction",
+          "type": "TRAIN_DIRECTION"
+        }
+      ]
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    }
+  ]
+}
