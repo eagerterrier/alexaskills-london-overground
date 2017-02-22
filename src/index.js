@@ -3,9 +3,9 @@
 const Alexa = require('alexa-sdk');
 
 var http       = require("https")
-  , APP_ID     = ""
-  , TFL_KEY    = ""
-  , TFL_APP_ID = ""
+  , APP_ID     = "amzn1.ask.skill.1371f436-66d4-4b57-b1a1-b1700e3e9607"
+  , TFL_KEY    = "a2a0722e5dafa0984d493e6a5423ce04"
+  , TFL_APP_ID = "88eef1cb"
   , currentStation = ""
   , currentDirection = "outbound"
   , debug = false
@@ -21,6 +21,7 @@ const languageStrings = {
             AND : 'and',
             SKILL_NAME: 'Next Trains on the London Overground',
             HELP_MESSAGE: 'You can say get the next train from and then say a station name, so for instance get the next train from Homerton',
+            WELCOME_MESSAGE: 'To find out when the next train leaves an overgound station, simply ask \'when is the next outbound train from\' and then add your station name. So, for example, \'when is the next outbound train from Homerton?\'',
             HELP_REPROMPT: 'What can I help you with?',
             STOP_MESSAGE: 'Have a safe journey!',
         },
@@ -170,7 +171,8 @@ var getTrainTimes = function(stationId, intent, session, response, that){
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetFact');
+        const speechOutput = this.t('WELCOME_MESSAGE'); 
+        this.emit(':tell', speechOutput);
     },
     'GetNextLondonOverGroundTrainIntent': function () {
         this.emit('handleNextTrainRequest');
@@ -204,12 +206,12 @@ const handlers = {
     },
     'Unhandled': function () {
         const speechOutput = this.t('HELP_MESSAGE');
-        const reprompt = this.t('HELP_MESSAGE');
+        const reprompt = this.t('HELP_REPROMPT');
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.HelpIntent': function () {
         const speechOutput = this.t('HELP_MESSAGE');
-        const reprompt = this.t('HELP_MESSAGE');
+        const reprompt = this.t('HELP_REPROMPT');
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
@@ -228,7 +230,7 @@ exports.handler = (event, context) => {
     alexa.appId = APP_ID;
     // To enable string internationalization (i18n) features, set a resources object.
     alexa.resources = languageStrings;
-    //alexa.dynamoDBTableName = '';
+    //alexa.dynamoDBTableName = 'stationFavourites';
     alexa.registerHandlers(handlers);
     alexa.execute();
 };

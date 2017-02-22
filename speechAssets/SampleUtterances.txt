@@ -1,2 +1,14 @@
-GetNextLondonOverGroundTrainIntent Ask Next London Overground Train for the next {inboundOrOutbound} train from {station}
-GetNextLondonOverGroundTrainIntent Ask Next London Overground Train for the next {inboundOrOutbound} trains from {station}
+GetNextLondonOverGroundTrainIntent give me the next {inboundOrOutbound} train from {station}
+GetNextLondonOverGroundTrainIntent give me the next {inboundOrOutbound} trains from {station}
+GetNextLondonOverGroundTrainIntent give me the next train from {station}
+GetNextLondonOverGroundTrainIntent give me the next trains from {station}
+GetNextLondonOverGroundTrainIntent find the next {inboundOrOutbound} train from {station}
+GetNextLondonOverGroundTrainIntent find the next {inboundOrOutbound} trains from {station}
+GetNextLondonOverGroundTrainIntent find the next train from {station}
+GetNextLondonOverGroundTrainIntent find the next trains from {station}
+GetNextLondonOverGroundTrainIntent when is the next {inboundOrOutbound} train from {station}
+GetNextLondonOverGroundTrainIntent when's the next {inboundOrOutbound} train from {station}
+GetNextLondonOverGroundTrainIntent when are the next {inboundOrOutbound} trains from {station}
+GetNextLondonOverGroundTrainIntent when is the next train from {station}
+GetNextLondonOverGroundTrainIntent when's the next train from {station}
+GetNextLondonOverGroundTrainIntent when are the next trains from {station}
